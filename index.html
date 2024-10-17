@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UYF-8">
+        <title></title>
+    </head>
+    <body>
+        <p><input type="text" id="inp_1" placeholder="Введите первое число" /></p>
+        <p><input type="text" id="inp_2" placeholder="Введите второе число" /></p>
+        <p><label for="btn">Сложить</label>
+        <button id="btn" onclick="Summ()" style="padding: 20px;"></button></p>
+        
+    </body>
+    <script>
+        function Summ() {
+            const inputValue = document.querySelector("#inp_1").value;
+            const inputValue_2 = document.querySelector("#inp_2").value;
+            const answer = Number(inputValue) + Number(inputValue_2)
+            alert(answer);
+            if (isNaN(answer)) {
+                alert("Ошибка, необходимо ввести два числа!")
+            };
+        };
+    </script>
+</html>
